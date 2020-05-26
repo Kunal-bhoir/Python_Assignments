@@ -53,13 +53,23 @@ Code<>:
 class io():
     def __init__(self):
         self.s = ""
-
     def get_string(self):
         self.s = input('Enter a string:  ')
-
     def print_string(self):
         print(self.s.upper())
-
 a = io()
 a.get_string()
 a.print_string()
+
+
+Question 4:
+
+Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
+
+Input:  without,hello,bag,world
+Output: bag,hello,without,world
+
+Code<>:
+
+item = sorted([x for x in input().split(',')])
+print(','.join(item))
