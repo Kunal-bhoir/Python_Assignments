@@ -1,10 +1,42 @@
 # Python_Assignments
 
+Question 1:
+
 With a given integral number n, write a program to generate a dictionary that contains (i, i x i) such that is an integral number between 1 and n (both included). and then the program should print the dictionary.
 Suppose the following input is supplied to the program: 8
-Then, the output should be:{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
+Then, the output should be:       {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
 
 Code<>:
 
 n = int(input("please enter a number between 1~10"))   
 print({x: x*x for x in range(1, n+1)})
+
+
+Question 2:
+
+Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.Suppose the following input is supplied to the program:34,67,55,33,12,98
+Then, the output should be:
+                            ['34', '67', '55', '33', '12', '98']
+                            ('34', '67', '55', '33', '12', '98')
+Code<>:
+
+lst1 = [(item) for item in input("Enter the list items : ").split(',')]
+print(lst1)
+print(tuple(lst1))
+  
+
+Question 3:
+
+Create a list with 5 tuples. 
+Each tuple should have the following elements ('Book Name', 'Published Year', 'Price'). 
+Sort the list based on Price and Book Name
+
+Code<>:    
+
+my_list = [('python', '2010', 100),('Django', '2011', 120), ('Flask', '2012', 140),('Panda', '2013', 160), ('Web Development', '2008', 100)]
+ 
+sorted_by_price = sorted(my_list, key=lambda list: list[2])
+sorted_by_Name = sorted(my_list, key=lambda list: list[0])
+print(sorted_by_price)
+print(sorted_by_Name)
+
