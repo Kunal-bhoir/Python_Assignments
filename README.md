@@ -62,7 +62,7 @@ a.get_string()
 a.print_string()
 
 
-Question 4:
+Question 5:
 
 Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
 
@@ -73,3 +73,28 @@ Code<>:
 
 item = sorted([x for x in input().split(',')])
 print(','.join(item))
+
+Question 6:
+
+Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
+
+Suppose the following input is supplied to the program:
+Hello world
+Practice makes perfect
+
+Then, the output should be:
+HELLO WORLD
+PRACTICE MAKES PERFECT
+
+Code<>:
+
+lines = []
+while True:
+    s = input()
+    if s:
+        lines.append(s.upper())
+    else:
+        break
+
+for sentence in lines:
+    print(sentence)
